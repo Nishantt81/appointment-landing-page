@@ -1,0 +1,666 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* banner section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.image-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-content .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.text-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+
+.text-content h1 {
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 14px;
+    font-weight: 100;
+}
+
+.text-content span {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+.banner-bottom {
+    position: relative;
+    margin-top: -130px;
+    margin-bottom: 270px;
+  
+    
+    
+
+}
+
+.img-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 550px;
+    display: inline-block;
+    z-index: 1;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 18px;
+    }
+
+    .img-bottom {
+        max-width: 440px;
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-content span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .img-bottom {
+        max-width: 330px;
+        margin-top: -50px;
+    }
+
+    .image-content {
+        height: 800px;
+    }
+
+    .image-content {
+        height: 600px;
+    }
+}
+
+@media (max-width: 400px) {
+    .text-content span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .img-bottom {
+        max-width: 230px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 344px) {
+    .text-content span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .img-bottom {
+        max-width: 230px;
+        margin-top: -200px;
+    }
+
+    /*BENEFIT SECTION */
+}
+.container {
+    width: 100%;
+}
+
+.benefit-section {
+    margin-bottom: 80px;
+}
+
+.benefits-heading {
+    margin-bottom: 55px;
+    margin-top: 55px;
+    text-align: center;
+    /* Center the main heading */
+}
+
+.main-heading {
+    font-size: 28px;
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+.benefits-heading-2 {
+    color: #38bbeb;
+}
+
+.small-heading {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.benefit-details {
+    color: rgb(141, 137, 137);
+}
+
+.row {
+    margin-bottom: 25px;
+}
+
+.perfect-software {
+    background-color: #38bbeb;
+    margin-bottom: 55px;
+    margin-top: 55px;
+    text-align: center;
+    padding: 30px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.text-section {
+    flex: 1;
+    color: whitesmoke;
+}
+
+.button-section {
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+}
+
+
+
+.purchase-button {
+    border:2px solid;
+    border-color: whitesmoke;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #38bbeb;
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+}
+
+.demo-button {
+    border:none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color:  #38bbeb;
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    
+    
+}
+
+.button:hover {
+    background-color: #2d97bd;
+    /* Change to a darker shade of blue */
+}
+
+.button:active {
+    background-color: #005f87;
+    /* Change to an even darker shade of blue */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+    .small-heading {
+        font-size: 14px;
+    }
+
+    .benefits-heading .main-heading {
+        font-size: 24px;
+    }
+
+    .benefits-heading-2 {
+        display: block;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        /* Align items in the center */
+    }
+
+    .mr-3 {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .col-sm-12 .d-flex {
+        flex-direction: row;
+        /* Align items in a row */
+        justify-content: center;
+        /* Center items horizontally */
+    }
+
+    .col-sm-12 .mr-3 {
+        margin-right: 15px;
+        margin-bottom: 0;
+        /* Remove bottom margin */
+    }
+}
+
+/* For the <h2> element */
+.h2 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    /* Normal font weight */
+    font-style: normal;
+    /* Normal font style */
+    font-variant: normal;
+    /* Normal font variant */
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-stretch: 100%;
+    /* Normal font stretch */
+    font-variation-settings: normal;
+    font-feature-settings: normal;
+    text-transform: none;
+    /* No text transformation */
+    text-decoration: none;
+    /* No text decoration */
+    text-align: center;
+    /* Center align text */
+    text-indent: 0px;
+    /* No text indentation */
+    color: rgb(34, 34, 34);
+    /* Text color */
+    margin-bottom: 40px;
+}
+
+.text-bright {
+    color: #38bbeb;;
+}
+
+.carousel-item {
+    text-align: center;
+    color: #555;
+}
+
+.carousel-item p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.carousel-item h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.carousel-item small {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    margin-top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    background: #021116;
+    opacity: 0.9;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: background 0.25s linear;
+    z-index: 2;
+}
+
+.carousel-control-prev {
+    left: 15px;
+    margin-left: 80px;
+}
+
+.carousel-control-next {
+    right: 15px;
+    margin-right: 80px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    font-family: "FontAwesome";
+    font-size: 15px;
+    line-height: 37px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-control-prev-icon:before {
+    content: "";
+    /* FontAwesome left arrow */
+}
+
+.carousel-control-next-icon:before {
+    content: "";
+    /* FontAwesome right arrow */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: #009BDE;
+}
+
+/* Scoped styles for promo section */
+.promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    margin-left: 0%;
+}
+
+.promo-section .text-section {
+    padding: 60px;
+    flex: 1;
+    margin-right: 20px;
+    max-width: 700px;
+    border-radius: 24px;
+}
+
+.promo-section .text-section h2 {
+    color: #021116;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.promo-section .text-section p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.promo-section .text-section button {
+    background-color: #ffffff;
+    color: #38bbeb;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    align-self: start;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.promo-section .text-section button:hover {
+    background-color: #38bbeb;
+    color: #fff;
+}
+
+.promo-section .image-section {
+    flex: 0 0 750px;
+    margin-left: 0%;
+}
+
+.promo-section .image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Responsive styles for promo section */
+@media (max-width: 1024px) {
+    .promo-section .text-section {
+        padding: 40px;
+    }
+
+    .promo-section .text-section h2 {
+        font-size: 28px;
+    }
+
+    .promo-section .text-section p {
+        font-size: 16px;
+    }
+
+    .promo-section .text-section button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-section .text-section {
+        padding: 0px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .promo-section .image-section {
+        
+        flex: 1 0 auto;
+        width: 400px;
+        
+    }
+}
+
+/*counter styles*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.custom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.custom-text-section {
+    max-width: 500px;
+    margin-right: 100px;
+}
+
+.custom-text-section h1 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-stretch: 100%;
+    font-variation-settings: normal;
+    font-feature-settings: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(34, 34, 34);
+    text-align: left;
+    text-indent: 0px;
+    margin-bottom: 30px;
+}
+
+.custom-description,
+.custom-stat p {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    line-height: 2.5;
+    font-stretch: 100%;
+    font-variation-settings: normal;
+    font-feature-settings: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(81, 89, 91);
+    text-align: left;
+    text-indent: 0px;
+    color: #ACB2B4;
+    margin-bottom: 40px;
+}
+
+.custom-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-stat {
+    text-align: center;
+}
+
+.custom-stat span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-image-section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* client section style */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.client_section {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh
+}
+
+
+
+.title_01 {
+font-size: 40px;
+font-weight: 200;
+text-align: center;
+
+
+}
+
+.sub_title_01 {
+    color: #38bbeb;
+
+}
+
+.client_auto_slider_container {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    margin: 70px;
+    overflow: hidden;
+}
+
+.client_auto_slider {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 30s linear infinite;
+}
+
+.client_auto_slider li {
+    font: 16px/1.2 "Roboto";
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    width: 100%;
+    background: #ddd;
+    margin: 0px 15px;
+    box-sizing: border-box;
+    border-radius: 25px
+}
+
+@keyframes rotation {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
